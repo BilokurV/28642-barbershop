@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     
     <header class="main-header">
       <div class="container">
+        <div class="logo-little">
+          <img src="img/" width="" height="" alt="Логотип Барбершоп «Бородинский»">
+        </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -39,82 +42,120 @@
       <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">магазин</a></li>
-          <li>Средства для ухода</li>
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">магазин</a>
+          </li>
+          <li>
+            <a>Средства для ухода</a>
+          </li>
         </ul>
       </div>
       
-      <div class="filters">
-        <div class="vendor">
-          <h3>Производители:</h3>
-          <form action="https://echo.htmlacademy.ru" method=”post”>
-            <label><input type="checkbox" name="baxter" value="baxter">baxter of california</label>
-            <label><input type="checkbox" name="mr" value="mr">mr natty</label>
-            <label><input type="checkbox" name="suavecito" value="suavecito">suavecito</label>
-            <label><input type="checkbox" name="malin" value="malin">malin+goetz</label>
-            <label><input type="checkbox" name="murrays" value="murrays">murray`s</label>
-            <label><input type="checkbox" name="american" value="american">american crew</label>
-          </form>
-        </div>
-
-        <div class="group">
-          <h3>Группы товаров:</h3>
-          <form action="https://echo.htmlacademy.ru" method=”post”>
-            <label><input type="radio" name="shave1" value="shave1">Бритвенные принадлежности</label>
-            <label><input type="radio" name="shave2" value="shave2">Средства для ухода</label>
-            <label><input type="radio" name="shave3" value="shave3">Аксессуары</label>
-          </form>
-        </div>
-        
+      <aside class="filters">
+        <h3>Производители:</h3>
         <form action="https://echo.htmlacademy.ru" method=”post”>
-          <button class="btn show" name="filters" value="filters">Показать</button>
+          <label>
+            <input type="checkbox" name="baxter" value="baxter">baxter of california
+          </label>
+          <label>
+            <input type="checkbox" name="mr" value="mr">mr natty
+          </label>
+          <label>
+            <input type="checkbox" name="suavecito" value="suavecito">suavecito
+          </label>
+          <label>
+            <input type="checkbox" name="malin" value="malin">malin+goetz
+          </label>
+          <label>
+            <input type="checkbox" name="murrays" value="murrays">murray`s
+          </label>
+          <label>
+            <input type="checkbox" name="american" value="american">american crew
+          </label>
+
+        <h3>Группы товаров:</h3>
+          <label>
+            <input type="radio" name="shave1" value="shave1">Бритвенные принадлежности
+          </label>
+          <label>
+            <input type="radio" name="shave2" value="shave2">Средства для ухода
+          </label>
+          <label>
+            <input type="radio" name="shave3" value="shave3">Аксессуары
+          </label>
+        
+          <button class="btn show" type="submit" name="filters" value="filters">Показать</button>
         </form>
-      </div>
+      </aside>
       
       <div class="catalog-items">
         <article class="item">
-          <img src="img/">
-          <p>Набор для путешествий  «Baxter of California»</p>
+          <img src="img/" alt="Набор для путешествий  «Baxter of California»">
+          <h1>
+            <a href="#">Набор для путешествий  «Baxter of California»</a>
+          </h1>
           <span class="price">2 900 РУБ.</span>
           <a class="btn buy" href="#">Купить</a>
         </article>
         <article class="item">
-          <img src="img/">
-          <p>Увлажняющий кондиционер  «Baxter of California»</p>
+          <img src="img/" alt="Увлажняющий кондиционер  «Baxter of California»">
+          <h1>
+            <a href="#">Увлажняющий кондиционер  «Baxter of California»</a>
+            </p>
           <span class="price">750 РУБ.</span>
           <a class="btn buy" href="#">Купить</a>
         </article>
         <article class="item">
-          <img src="img/">
-          <p>Гель для волос «SUAVECITO»</p>
+          <img src="img/" alt="Гель для волос «SUAVECITO»">
+          <h1>
+            <a href="#">Гель для волос «SUAVECITO»</a>
+          </h1>
           <span class="price">290 РУБ.</span>
           <a class="btn buy" href="#">Купить</a>
         </article>
         <article class="item">
-          <img src="img/">
-          <p>Глина для укладки волос  «American crew»</p>
+          <img src="img/" alt="Глина для укладки волос  «American crew»">
+          <h1>
+            <a href="#">Глина для укладки волос  «American crew»</a>
+          </h1>
           <span class="price">500 РУБ.</span>
           <a class="btn buy" href="#">Купить</a>
         </article>
         <article class="item">
-          <img src="img/">
-          <p>Гель для волос «AMERICAN CREW»</p>
+          <img src="img/" alt="Гель для волос «AMERICAN CREW»">
+          <h1>
+            <a href="#">Гель для волос «AMERICAN CREW»</a>
+          </h1>
           <span class="price">300 РУБ.</span>
           <a class="btn buy" href="#">Купить</a>
         </article>
         <article class="item">
-          <img src="img/">
-          <p>Набор для бритья «Baxter of California»</p>
+          <img src="img/" alt="Набор для бритья «Baxter of California»">
+          <h1>
+            <a href="#">Набор для бритья «Baxter of California»</a>
+          </h1>
           <span class="price">3 900 РУБ.</span>
           <a class="btn buy" href="#">Купить</a>
         </article>
         
         <div class="pages">
-          <a class="btn" href="#">1</a>
-          <a class="btn" href="#">2</a>
-          <a class="btn" href="#">3</a>
-          <a class="btn" href="#">4</a>
+          <ul>
+            <li>
+              <a class="btn" href="#">1</a>
+            </li>
+            <li>
+              <a class="btn" href="#">2</a>
+            </li>
+            <li>
+              <a class="btn" href="#">3</a>
+            </li>
+            <li>
+              <a class="btn" href="#">4</a>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
@@ -122,6 +163,7 @@
     <footer class="main-footer">
       <div class="container">
         <section class="footer-contacts">
+          
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
